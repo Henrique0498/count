@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
   * {
     margin: 0;
     padding: 0;
@@ -8,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%;
   }
 
   html, body, #__next {
